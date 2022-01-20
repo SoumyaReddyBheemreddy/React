@@ -35,8 +35,6 @@ export default function MediaCard(props: MediaCardProps) {
           <Typography variant="body2" color="text.secondary">
             {props.author}
           </Typography>
-        </CardContent>
-        <CardActions>
           <div className={classes.view}>
             <AccessTimeIcon className={classes.icon} />
 
@@ -44,7 +42,7 @@ export default function MediaCard(props: MediaCardProps) {
               {props.readingTime}
             </Typography>
           </div>
-        </CardActions>
+        </CardContent>
         <MoreHorizIcon className={classes.moreicon} />  
         <LinearProgress style={{height:10}} variant="determinate" value={props.progress} />
       </Card>

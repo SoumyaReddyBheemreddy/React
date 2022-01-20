@@ -83,6 +83,7 @@ export const cardStyle = makeStyles((theme) => {
     },
     view: {
       display: "flex",
+      paddingTop:"17px"
     },
     icon: {
       "&.MuiSvgIcon-root": {
