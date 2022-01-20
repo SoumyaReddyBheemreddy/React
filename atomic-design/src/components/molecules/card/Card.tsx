@@ -1,6 +1,5 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
@@ -29,10 +28,10 @@ export default function MediaCard(props: MediaCardProps) {
           alt={props.title}
         />
         <CardContent>
-          <Typography gutterBottom variant="subtitle1" component="div">
+          <Typography sx={{paddingTop:"7px"}} gutterBottom variant="subtitle1" component="div">
             {props.title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography sx={{paddingTop:"16px"}} variant="body2" color="text.secondary">
             {props.author}
           </Typography>
           <div className={classes.view}>
@@ -42,9 +41,10 @@ export default function MediaCard(props: MediaCardProps) {
               {props.readingTime}
             </Typography>
           </div>
+          <MoreHorizIcon className={classes.moreicon} />  
         </CardContent>
-        <MoreHorizIcon className={classes.moreicon} />  
-        <LinearProgress style={{height:10}} variant="determinate" value={props.progress} />
+       
+        <LinearProgress   variant="determinate" value={props.progress}  />
       </Card>
     </ThemeProvider>
   );

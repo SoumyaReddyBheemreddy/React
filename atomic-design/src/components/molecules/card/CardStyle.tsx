@@ -4,7 +4,6 @@ import { createTheme } from "@mui/material/styles";
 export const bookCardTheme = createTheme({
   typography: {
     subtitle1: {
-      
       left: "5.63%",
       right: "15.14%",
       top: "66.52%",
@@ -24,7 +23,6 @@ export const bookCardTheme = createTheme({
       color: "#03314B",
     },
     body2: {
-     
       left: "5.63%",
       right: "60.92%",
       top: "74.89%%",
@@ -50,8 +48,26 @@ export const bookCardTheme = createTheme({
     MuiPaper: {
       styleOverrides: {
         root: {
-          boxShadow: "none",
           borderRadius: "8px",
+        },
+      },
+    },
+    MuiLinearProgress: {
+      styleOverrides: {
+        root: {
+          position: "absolute",
+          left: "0",
+          bottom: "0",
+          width: "100%",
+          height: "15px",
+
+          boxSizing: "border-box",
+          
+          borderRadius: "0px 0px 8px 8px",
+          background:"#F1F6F4",
+          "& .MuiLinearProgress-barColorPrimary": {
+            backgroundColor: "#E1ECFC",
+          },
         },
       },
     },
@@ -83,7 +99,7 @@ export const cardStyle = makeStyles((theme) => {
     },
     view: {
       display: "flex",
-      paddingTop:"17px"
+      paddingTop: "17px",
     },
     icon: {
       "&.MuiSvgIcon-root": {
@@ -102,8 +118,8 @@ export const cardStyle = makeStyles((theme) => {
       top: "82.83%",
       bottom: "13.3%",
     },
-    moreicon:{
-       marginLeft:"90%"
+    moreicon: {
+      marginLeft: "90%",
     },
   };
 });
