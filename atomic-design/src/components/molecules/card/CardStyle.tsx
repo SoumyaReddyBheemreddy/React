@@ -110,6 +110,7 @@ export const cardStyle = makeStyles((theme) => {
         width: "16.67px",
         height: "16.67px",
         marginRight: "5.67px",
+        color: "#6D787E",
       },
     },
     text: {
